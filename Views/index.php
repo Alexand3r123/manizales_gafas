@@ -16,8 +16,8 @@
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
-                                <h1 class="h1 text-success"><b>Zay</b> eCommerce</h1>
-                                <h3 class="h2">Tiny and Perfect eCommerce Template</h3>
+                                <h1 class="h1 text-success"><b>IKÜ</b> Tienda Online</h1>
+                                <h3 class="h2">Aquí encontraras los mejores marcos de gafas de la ciudad.</h3>
                                 <p>
                                     Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1). 
                                     This template is 100% free provided by <a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank">TemplateMo</a> website. 
@@ -91,9 +91,9 @@
             </div>
         </div>
         <div class="row">
-            <?php foreach ($data['categorias'] as $key => $categoria) { ?>
+            <?php foreach ($data['categorias'] as $categoria) { ?>
             <div class="col-12 col-md-3 p-5 mt-3">
-                <a href="#"><img src="<?php echo $categoria['imagen']?>" class="rounded-circle img-fluid border"></a>
+                <a href="<?php echo BASE_URL . 'principal/categorias/' . $categoria['id']?>"><img src="<?php echo $categoria['imagen']?>" class="rounded-circle img-fluid border"></a>
                 <h5 class="text-center mt-3 mb-3"><?php echo $categoria['categoria'];?></h5>
                 <p class="text-center"><a class="btn btn-success">Go Shop</a></p>
             </div>
@@ -108,7 +108,7 @@
         <div class="container py-5">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
-                    <h1 class="h1">Featured Product</h1>
+                    <h1 class="h1">Productos Destacados</h1>
                     <p>
                         Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         Excepteur sint occaecat cupidatat non proident.

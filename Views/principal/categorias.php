@@ -60,8 +60,8 @@
                                 <img class="card-img rounded-0 img-fluid" src="<?php echo $producto['imagen']; ?>">
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
-                                        <li><a class="btn btn-success text-white btnAddDeseo" href="#"><i class="far fa-heart"></i></a></li>
-                                        <li><a class="btn btn-success text-white mt-2" href="<?php echo BASE_URL . 'principal/detail/'. $producto['id']?>"><i class="far fa-eye"></i></a></li>
+                                        <li><a class="btn btn-success text-white" href="#"><i class="fas fa-heart"></i></a></li>
+                                        <li><a class="btn btn-success text-white mt-2" href="<?php echo BASE_URL . 'principal/detail/'. $producto['id']?>"><i class="fas fa-eye"></i></a></li>
                                         <li><a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a></li>
                                     </ul>
                                 </div>
@@ -93,20 +93,19 @@
                     <?php } ?>
                 </div>
                 <div div="row">
-
                     <ul class="pagination pagination-lg justify-content-end">
                         <?php 
                         $anterior = $data['pagina'] - 1;
                         $siguiente = $data['pagina'] +1;
-                        $url = BASE_URL .'principal/shop/';
+                        $url = BASE_URL .'principal/categoria/' . $data['id_categoria'];
                         if ($data['pagina'] > 1) {
                             echo '<li class="page-item">
-                            <a class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="'. $url . $anterior.'">Anterior</a>
+                            <a class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="'. $url . '/' . $anterior.'">Anterior</a>
                         </li>';
                         }
                         if ($data['total'] >= $siguiente) {
                             echo '<li class="page-item">
-                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-white" href="'. $url . $siguiente.'">Siguiente</a>
+                            <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-white" href="'. $url . '/' .$siguiente.'">Siguiente</a>
                         </li>';
                         }
                         ?>

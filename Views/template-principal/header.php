@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title><?php echo TITLE . ' - ' . $data['title'];?></title>
+    <title><?php echo TITLE . ' - ' . $data['title']; ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -62,16 +62,20 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/about'?>">Servicios</a>
+                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/about' ?>">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/shop'?>">Tienda</a>
+                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/shop' ?>">Tienda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/contact'?>">Contacto</a>
+                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/contact' ?>">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="login.php" >Ingresar</a>
                         </li>
                     </ul>
                 </div>
+
                 <div class="navbar align-self-center d-flex">
                     <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                         <div class="input-group">

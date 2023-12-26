@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title><?php echo TITLE . ' - ' . $data['title']; ?></title>
+    <title><?php echo TITLE . ' - ' . $data['title'];?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -62,20 +62,16 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/about' ?>">Servicios</a>
+                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/about'?>">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/shop' ?>">Tienda</a>
+                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/shop'?>">Tienda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/contact' ?>">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  href="login.php" >Ingresar</a>
+                            <a class="nav-link" href="<?php echo BASE_URL . 'principal/contact'?>">Contacto</a>
                         </li>
                     </ul>
                 </div>
-
                 <div class="navbar align-self-center d-flex">
                     <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                         <div class="input-group">
@@ -92,11 +88,11 @@
                         <i class="fas fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <a class="nav-icon position-relative text-decoration-none" href="<?php echo BASE_URL . 'principal/deseo'?>" prod="<?php echo $producto['id'];?>">
                         <i class="fas fa-fw fa-heart text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark" id="btnCantidadDeseo">0</span>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <a class="nav-icon position-relative text-decoration-none" href="<?php echo BASE_URL . 'principal/contact/';?>">
                         <i class="fas fa-fw fa-user text-dark mr-3"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                     </a>

@@ -79,6 +79,14 @@ class Principal extends Controller
         $this->views->getView('principal', "contact", $data);
     }
 
+        //Lista Deseos
+
+        public function deseo()
+        {
+            $data['title'] = 'Tú lista de deseo';
+            $this->views->getView('principal', "deseo", $data);
+        }
+
 }
 
 ?>

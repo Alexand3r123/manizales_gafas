@@ -60,7 +60,7 @@
                                 <img class="card-img rounded-0 img-fluid" src="<?php echo $producto['imagen']; ?>">
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
-                                        <li><a class="btn btn-success text-white btnAddDeseo" href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><a class="btn btn-success text-white btnAddDeseo" href="#" prod="<?php echo $producto['id']; ?>"><i class="fas fa-heart"></i></a></li>
                                         <li><a class="btn btn-success text-white mt-2" href="<?php echo BASE_URL . 'principal/detail/'. $producto['id']?>"><i class="far fa-eye"></i></a></li>
                                         <li><a class="btn btn-success text-white mt-2" href="#"><i class="fas fa-cart-plus"></i></a></li>
                                     </ul>
@@ -223,6 +223,7 @@
     <!--End Brands-->
 
     <?php include_once 'Views/template-principal/footer.php'; ?>
+
 </body>
 
 </html>
